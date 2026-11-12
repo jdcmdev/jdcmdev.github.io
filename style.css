@@ -1,0 +1,88 @@
+/* Shared look for jdcmdev's game pages: honey on deep meadow green, like Hive Whisper. */
+:root {
+  --bg: #0f1c0b;
+  --bg2: #1b3012;
+  --card: rgba(255, 255, 255, 0.06);
+  --line: rgba(255, 255, 255, 0.14);
+  --text: #fbf6e8;
+  --muted: #c9d2bd;
+  --honey: #ffc338;
+  --honey-light: #ffe08a;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 700px at 15% -10%, #2d4a1a 0%, transparent 60%), linear-gradient(var(--bg2), var(--bg));
+  background-attachment: fixed;
+  color: var(--text);
+  font: 400 18px/1.6 "Fredoka", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 20px 72px;
+}
+
+h1 {
+  margin: 0.1em 0 0.2em;
+  font-weight: 700;
+  font-size: clamp(36px, 8vw, 52px);
+  line-height: 1.1;
+  color: var(--honey);
+}
+
+h2 {
+  margin: 1.6em 0 0.3em;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--honey-light);
+}
+
+p { margin: 0.4em 0 0.8em; }
+
+a { color: var(--honey); }
+a:hover { color: var(--honey-light); }
+
+.eyebrow {
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--muted);
+}
+.eyebrow a { color: inherit; text-decoration: none; }
+
+.updated { color: var(--muted); font-size: 15px; }
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 6px 22px 12px;
+  margin: 24px 0;
+}
+.card.highlight { border-color: rgba(255, 195, 56, 0.55); }
+.card h2 { margin-top: 0.8em; }
+
+.games { list-style: none; padding: 0; margin: 20px 0; }
+.games li { margin: 0 0 14px; }
+.games a.game {
+  display: block;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 16px 22px;
+}
+.games a.game:hover { border-color: rgba(255, 195, 56, 0.55); }
+.games strong { color: var(--honey); font-weight: 600; font-size: 22px; }
+.games span { display: block; color: var(--muted); }
+.links { margin-top: 6px; font-size: 16px; }
